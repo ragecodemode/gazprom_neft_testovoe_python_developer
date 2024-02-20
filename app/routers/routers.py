@@ -22,9 +22,7 @@ async def get_measurements_by_device_id():
     ...
 
 
-@measurements_routes.get(
-    '/measurements/statistics/{device_id}/',
-    response_model=schemas.Measurements
+@measurements_routes.get('/measurements/statistics/{device_id}/',response_model=schemas.Measurements
 )
 async def get_statistics_by_device_id():
     """Вычисление статистики для устройства за период."""
