@@ -10,10 +10,7 @@ measurements_routes = APIRouter(prefix='/measurements', tags=['Measurements'])
 
 
 @measurements_routes.post('/', response_model=schemas.Measurements)
-async def create_measurements(
-    measurements: schemas.Measurements,
-    db: Session = Depends(get_db)
-):
+async def create_measurements(measurements: schemas.Measurements, db: Session = Depends(get_db)):
     """Сохранение изменений."""
     return await crud.create_measurements(measurements=measurements, db=db)
 
