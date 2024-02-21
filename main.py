@@ -1,6 +1,7 @@
 import uvicorn
 from fastapi import FastAPI
-from routers.routers import measurements_routes
+
+from app.routers.routers import measurements_routes
 
 app = FastAPI(title="Система учета и анализа данных")
 
