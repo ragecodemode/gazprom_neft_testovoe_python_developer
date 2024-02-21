@@ -1,3 +1,0 @@
-[flake8]
-exclude = .git, __pycach__, venv, __init__.py
-max-line-lengh = 79
