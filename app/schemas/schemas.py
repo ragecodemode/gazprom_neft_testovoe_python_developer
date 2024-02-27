@@ -1,13 +1,14 @@
 from datetime import datetime
 
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel
 
 
-class Measurements(BaseModel):
+class MeasurementsModel(BaseModel):
     timestamp: datetime
     device_id: int
     x: float
     y: float
     z: float
 
-    model_config = ConfigDict(from_attributes=True)
+    class Config:
+        orm_mode = True
