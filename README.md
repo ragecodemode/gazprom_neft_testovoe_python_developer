@@ -17,5 +17,8 @@
 3) В файле alembic.ini вставить свои данные от PostgreSQL.
 4) Запустить файлы DockerFile и docker-compose.yaml командой:
 ```
+Создать .env файл для того, что бы указать свои данные для docker-compose файла: пароль, имя пользователя, имя базы данных.
+```
+```
 docker-compose up -d --build
 ```
