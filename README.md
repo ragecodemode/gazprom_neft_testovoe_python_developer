@@ -8,6 +8,8 @@
 - Alembic
 - SQLAlchemy
 
+---
+
 ### Запустк проекта
 
 1) В костанту POSTGRES_URL в файле database вставить свои данные от PostgreSQL.
