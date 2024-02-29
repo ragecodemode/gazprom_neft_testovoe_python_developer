@@ -46,7 +46,7 @@ async def get_measurements_by_device_id(
 async def get_statistics_by_device_id(
     device_id: int, db: Session = Depends(get_db)
 ):
-    """Вычисление статистики для устройства за период."""
+    """Вычисление статистики для устройства."""
     devices = await crud.get_device_id(device_id=device_id, db=db)
     if devices is None:
         raise HTTPException(status_code=404, detail="Device not found")
