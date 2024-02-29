@@ -3,7 +3,7 @@ from fastapi.exceptions import HTTPException
 from sqlalchemy.orm import Session
 
 from app.api import crud
-from app.database import get_db
+from app.db.database import get_db
 from app.schemas import schemas
 from app.schemas.schemas import MeasurementsModel
 

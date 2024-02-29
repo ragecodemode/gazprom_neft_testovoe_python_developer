@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 
-from app.models import Measurement
+from app.db.models import Measurement
 from app.schemas.schemas import MeasurementsModel
 
 

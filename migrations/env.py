@@ -5,7 +5,7 @@ from sqlalchemy import engine_from_config, pool
 
 # add your model's MetaData object here
 # for 'autogenerate' support
-from app.models import Base
+from app.db.models import Base
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
