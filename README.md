@@ -13,8 +13,8 @@
 ### Запустк проекта
 
 1) В костанту POSTGRES_URL в файле database вставить свои данные от PostgreSQL.
-2) Установить requirements.txt и развернуть виртуальное окружение
-3) В файле alembic.ini вставить свои данные от PostgreSQL.
+2) Установить requirements.txt и развернуть виртуальное окружение.
+3) В файле alembic.ini вставить свои данные от PostgreSQL в переменную: sqlalchemy.url.
 4) Запустить файлы DockerFile и docker-compose.yaml командой:
 ```
 Создать .env файл для того, что бы указать свои данные для docker-compose файла: пароль, имя пользователя, имя базы данных.
