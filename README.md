@@ -7,6 +7,7 @@
 - PostgreSQL
 - Alembic
 - SQLAlchemy
+- Pydatic
 
 ---
 
